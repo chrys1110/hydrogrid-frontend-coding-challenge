@@ -1,0 +1,7 @@
+.error {
+  color: #d00;
+}
+
+.selectable {
+  user-select: text;
+}

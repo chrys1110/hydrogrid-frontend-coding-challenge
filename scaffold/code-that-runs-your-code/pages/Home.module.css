@@ -1,0 +1,63 @@
+.home {
+  margin: 0 auto;
+  text-align: initial;
+  width: max-content;
+}
+
+.home h1 {
+  margin: 0.83em 0 0.4em;
+}
+
+.centeredLogo {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #0bb7a0aa);
+}
+.logo:not(:hover) {
+  transition: filter 300ms ease-in-out;
+}
+
+@keyframes logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  16.66% {
+    transform: rotate(60deg);
+  }
+  33.33% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  66.66% {
+    transform: rotate(240deg);
+  }
+  83.333% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 9s ease-in-out;
+  }
+}
+
+.description {
+}
+
+.fileList {
+  display: inline-block;
+  margin: 0;
+}

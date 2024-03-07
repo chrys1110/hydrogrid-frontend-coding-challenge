@@ -1,0 +1,14 @@
+.horizontalSplit {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.horizontalSplit > :first-child {
+  flex: 1 0 auto;
+}
+
+.horizontalSplit > :not(:first-child) {
+  flex: 1 0 50%;
+}

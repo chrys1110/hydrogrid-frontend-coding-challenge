@@ -1,0 +1,85 @@
+/* You can put your styles here or in Task2.tsx */
+
+/* Reset */
+p {
+  margin: 0;
+}
+
+.tools-btn {
+  margin-left: auto;
+}
+
+.input-sm {
+  width: 100px;
+}
+
+button {
+  width: 150px;
+}
+
+.toolbar,
+.button-add {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1rem 0;
+  justify-content: end;
+}
+
+label {
+  font-size: 0.8em;
+  margin-left: 0.5em;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  align-items: end;
+  gap: 1em;
+  padding: 0.3rem 0;
+
+  & .form-element {
+    display: flex;
+    flex-direction: column;
+    /* align-self: stretch; */
+    /* align-items: center; */
+    /* gap: 0.5em; */
+  }
+  select {
+    align-self: stretch;
+    width: 150px;
+  }
+}
+.with-icon {
+  display: flex;
+  align-items: end;
+  gap: 0.5em;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: inherit;
+
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  outline: none;
+
+  padding: 0.5em;
+
+  transition: border-color 0.25s;
+
+  &:focus-visible,
+  &:hover {
+    border-color: #646cff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  input,
+  select {
+    border-color: rgb(33 53 71 / 10%);
+  }
+}

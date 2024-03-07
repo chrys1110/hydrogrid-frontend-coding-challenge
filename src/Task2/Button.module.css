@@ -1,0 +1,8 @@
+.primary {
+  background-color: var(--primary);
+  color: #ffffff;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
